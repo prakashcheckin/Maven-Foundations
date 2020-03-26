@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="841aa43f-c6b4-4a1c-bf93-38d3e716f799" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/JavaHelloWorldIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/JavaHelloWorldIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/JavaHelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/JavaHelloWorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/Junit5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/Junit5Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/prakashcheckin/Maven-Foundations.git" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZfHP8joV7uZzYRFw2L0BXsAxo5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="841aa43f-c6b4-4a1c-bf93-38d3e716f799" name="Default Changelist" comment="" />
+      <created>1585223202056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585223202056</updated>
+      <workItem from="1585223229587" duration="2826000" />
+      <workItem from="1585262850336" duration="885000" />
+      <workItem from="1585263853145" duration="980000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="131" key="FileChooserDialogImpl" timestamp="1585223440290">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="131" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1585223440290" />
+    <state x="392" y="88" key="GrepConsoleSettings" timestamp="1585225159445">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="GrepConsoleSettings/0.0.1600.860@0.0.1600.860" timestamp="1585225159445" />
+    <state width="1557" height="242" key="GridCell.Tab.0.bottom" timestamp="1585264358232">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="242" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585264358232" />
+    <state width="1557" height="242" key="GridCell.Tab.0.center" timestamp="1585264358232">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="242" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585264358232" />
+    <state width="1557" height="242" key="GridCell.Tab.0.left" timestamp="1585264358232">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="242" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585264358232" />
+    <state width="1557" height="242" key="GridCell.Tab.0.right" timestamp="1585264358232">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="242" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585264358232" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1585263966057">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585263966057" />
+  </component>
+</project>
