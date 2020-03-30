@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>guru.springframework</groupId>
+    <artifactId>mb2g-testing</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
+
+    <!--Jboss jar is not available in Maven central repository, so configuring Jboss repo to get jboss jar-->
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.ejb3</groupId>
+            <artifactId>jboss-ejb3-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+    </dependencies>
+
+
+    <!--JBoss repo configuration, Maven wil first check in maven central if that jar not available thenn
+    it will search in the alternate repo
+
+    This repos configuration commented as we have another effective method to configure the repo
+    Configuring repo information in setting.xml file in the following path :/user/prakash/.m2/settings.xml
+    ->
+
+    <!-<repositories>
+        <repository>
+            <id>redhat-ga</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>-->
+
+    <!--Deploying jar to our own repository-->
+    <!--Wagon plugin to communicate to packagecloud-->
+    <build>
+        <extensions>
+            <extension>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.6</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <!--this tell where to deploy our jar-->
+    <distributionManagement>
+        <!--Deploying jar to our own release repository-->
+        <repository>
+            <!--URL and Password information wil be available in the setting.xml  with respect to this ID name provided here-->
+            <id>packagecloud.release</id>
+            <url>packagecloud+https://packagecloud.io/prakashrepo/release</url>
+        </repository>
+
+        <!--Deploying jar to our own snapshot repository-->
+        <snapshotRepository>
+            <id>packagecloud.snapshot</id>
+            <url>packagecloud+https://packagecloud.io/prakashrepo/snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+		  
+		<!--Jboss repository configuraiton-->
+		 <profiles>
+				<profile>
+					<id>jboss</id>
+					<repositories>
+						<repository>
+						<id>redhat-ga</id>
+						<url>https://maven.repository.redhat.com/ga/</url>
+						<snapshots>
+							<enabled>false</enabled>
+						</snapshots>
+						</repository>
+					</repositories>
+				</profile>
+		</profiles>
+		
+		<!--packagecloud configuration-->
+		<servers>
+			<server>
+				<id>packagecloud.release</id>
+				<password>6bfb20a2502a2cd0750f3fdc5add8ef303d33969b53b41f6</password>
+			</server>
+			<server>
+				<id>packagecloud.snapshot</id>
+				<password>6bfb20a2502a2cd0750f3fdc5add8ef303d33969b53b41f6</password>
+			</server>
+		</servers>
+		
+		<activeProfiles>
+			<activeProfile>jboss</activeProfile>
+		</activeProfiles>
+
+</settings>
