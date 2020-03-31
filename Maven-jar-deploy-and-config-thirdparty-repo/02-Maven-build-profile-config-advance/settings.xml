@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+		  
+		<!--Jboss repository configuraiton-->
+		<!--
+		 <profiles>
+				<profile>
+					<id>jboss</id>
+					<repositories>
+						<repository>
+						<id>redhat-ga</id>
+						<url>https://maven.repository.redhat.com/ga/</url>
+						<snapshots>
+							<enabled>false</enabled>
+						</snapshots>
+						</repository>
+					</repositories>
+				</profile>
+		</profiles>
+		-->
+		
+
+		<!--Nexus group configuration. Third party repository can be configured in nexus group repository.
+		No need of mentioning each repository separately in setting.xml.
+		Jboos repository commented out as jboss got configured in nexus group repository. Maven will directly hit the nexus repository
+		will find for the jar. if the jar not found. it will search any other third party repository got configured in 
+		nexus group. If any third party repository configured. Then nexus will get the jar through that URL. Even maven central repository can configure in nexus.
+		-->
+		<!--So now only one repository got configured to fetch the jar and we can have multiple distrubtion management profile to deploy the jar  in multiple servers-->
+		<mirrors>
+			<mirror>
+				<id>central</id>
+				<name>central</name>
+				<url>http://localhost:8081/repository/nexus-group/</url>
+				<mirrorOf>*</mirrorOf>
+			</mirror>
+		</mirrors>
+		
+		<!--packagecloud configuration, In packagecloud we hvae release repo and snapshot repo-->
+		<servers>
+			<server>
+				<id>packagecloud.release</id>
+				<password>6bfb20a2502a2cd0750f3fdc5add8ef303d33969b53b41f6</password>
+			</server>
+			<server>
+				<id>packagecloud.snapshot</id>
+				<password>6bfb20a2502a2cd0750f3fdc5add8ef303d33969b53b41f6</password>
+			</server>
+			
+			<!--Nexus configuration, In Nexus we hvae release repo and snapshot repo-->
+			<server>
+				<id>nexus-snapshot</id>
+				<username>admin</username>
+				<password>admin123</password>
+			</server>
+			<server>
+				<id>nexus-release</id>
+				<username>admin</username>
+				<password>admin123</password>
+			</server>
+		</servers>
+		
+		<!--
+		<activeProfiles>
+			<activeProfile>jboss</activeProfile>
+		</activeProfiles>
+		-->
+
+</settings>
